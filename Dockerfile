@@ -13,3 +13,5 @@ RUN curl -sL $(curl -s https://api.github.com/repos/docker/compose/releases/late
     sudo mv /tmp/docker-compose /usr/local/lib/docker/cli-plugins/docker-compose && \
     sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose 
     
+COPY rootfs /
+
