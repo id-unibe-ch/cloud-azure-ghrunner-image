@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner:2.333.0
+FROM ghcr.io/actions/actions-runner:2.334.0
 
 # Install build essentials
 RUN sudo apt-get update && \
