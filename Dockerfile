@@ -2,7 +2,7 @@ FROM ghcr.io/actions/actions-runner:2.336.0
 
 # Install build essentials
 RUN sudo apt-get update && \
-    sudo apt-get install -y zstd wget build-essential apt-transport-https ca-certificates curl file make jq unzip autoconf automake gcc g++ gnupg && \
+    sudo apt-get install -y zstd wget build-essential apt-transport-https ca-certificates curl file make jq unzip autoconf automake gcc g++ gnupg libsodium-dev && \
     sudo rm -rf /var/lib/apt/lists/*
 
 # Install azure cli
